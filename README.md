@@ -1,9 +1,8 @@
 # 🧪 EduCertify — Évaluateur Pédagogique Expert
 
-[![Skill](https://img.shields.io/badge/hermes-skill-purple)](https://hermes-agent.nousresearch.com)
-[![Category](https://img.shields.io/badge/category-research-blue)]()
-
-> **EduCertify** est un système d'évaluation pédagogique multidimensionnel pour contenus éducatifs destinés aux enfants (0-12 ans). Combine neurosciences cognitives, psychologie du développement, philosophie de l'éducation et critique littéraire spécialisée jeunesse.
+> **EduCertify** est un système d'évaluation pédagogique multidimensionnel pour contenus éducatifs enfants (0-12 ans). Combine neurosciences cognitives, psychologie du développement, philosophie de l'éducation et critique littéraire jeunesse.
+>
+> Fonctionne avec **n'importe quel LLM** — Claude, ChatGPT, Gemini, DeepSeek, Hermes Agent, etc. C'est un prompt universel, pas un plugin.
 
 ---
 
@@ -23,7 +22,7 @@ Le marché de l'éducation enfantine est saturé de contenus "pédagogiques" qui
 ## 📐 Méthodologie — 8 Dimensions d'Analyse
 
 | # | Dimension | Fondement | Poids |
-|---|---|---|------|
+|---|-----------|---|------|
 | 1 | **Alignement développemental** | Piaget, Vygotsky | x1.5 |
 | 2 | **Charge cognitive** | Sweller, neurosciences | x1.5 |
 | 3 | **Objectifs pédagogiques** | Taxonomie de Bloom | x1.5 |
@@ -39,7 +38,7 @@ Le marché de l'éducation enfantine est saturé de contenus "pédagogiques" qui
 
 ## 🎯 Quand utiliser EduCertify ?
 
-Ce skill est conçu pour les **créateurs de contenu éducatif**, les **éditeurs jeunesse**, les **enseignants**, les **parents exigeants** et les **investisseurs EdTech** qui veulent savoir si un produit éducatif tient vraiment ses promesses.
+Pour les **créateurs de contenu éducatif**, **éditeurs jeunesse**, **enseignants**, **parents exigeants** et **investisseurs EdTech**.
 
 Types de contenu évaluables :
 - 📚 Livres illustrés et albums jeunesse
@@ -52,36 +51,41 @@ Types de contenu évaluables :
 
 ---
 
-## ⚡ Installation
+## ⚡ Utilisation (universelle)
 
-### Option 1 — Via Hermes Agent (recommandé)
+### Option 1 — Prompt unique (le plus simple)
 
-Si tu utilises **Hermes Agent** (https://hermes-agent.nousresearch.com) :
+Copie-colle le contenu de **SKILL.md** dans n'importe quel chat avec ton IA préférée, puis ajoute ton contenu éducatif à analyser.
+
+> *"[colle le contenu de SKILL.md]*
+>
+> *Maintenant, analyse ce contenu avec EduCertify :*
+> *- Type : livre illustré*
+> *- Âge cible : 3-6 ans*
+> *- Objectif : apprendre à identifier les émotions*
+> *- Texte : [ton contenu]"*
+
+### Option 2 — Claude Desktop
+
+1. Copie le contenu de `SKILL.md`
+2. Dans Claude Desktop, écris : *"Agis en tant que EduCertify"* et colle le framework
+3. Ensuite, donne-lui ton contenu éducatif
+
+### Option 3 — ChatGPT (Custom Instructions)
+
+1. Va dans Settings > Personalization > Custom Instructions
+2. Dans "What would you like ChatGPT to know?" : colle `SKILL.md`
+3. Ensuite, demande-lui d'analyser n'importe quel contenu éducatif
+
+### Option 4 — Hermes Agent
+
+Si tu utilises **Hermes Agent** :
 
 ```bash
 hermes skills install kxmXX/educertify
 ```
 
-Puis dans ta conversation :
-> *"J'ai un livre illustré pour les 3-6 ans sur les émotions. EduCertify, analyse."*
-
-Le skill est chargé automatiquement quand tu l'utilises.
-
-### Option 2 — Manuel (pour tout autre usage)
-
-Clone le repo :
-```bash
-git clone https://github.com/kxmXX/educertify.git
-```
-
-Colle le contenu de `SKILL.md` dans ton prompt IA favorite (Claude, ChatGPT, Gemini, etc.) avec :
-1. Le contenu éducatif à analyser (texte intégral, description des visuels, transcriptions)
-2. La tranche d'âge cible
-3. Les objectifs pédagogiques déclarés
-
-### Exemple de prompt complet
-
-> *"Utilise le framework EduCertify (ci-dessous) pour analyser ce contenu : [colle le contenu de SKILL.md]. Voici le livre : [texte + description]. Âge cible : 3-6 ans. Objectif : apprendre à identifier les émotions de base."*
+Puis dans ta conversation : *"EduCertify, analyse ce contenu."*
 
 ---
 
@@ -119,25 +123,27 @@ Colle le contenu de `SKILL.md` dans ton prompt IA favorite (Claude, ChatGPT, Gem
 
 ```
 educertify/
-├── SKILL.md          # Grille d'évaluation complète (8 dimensions, scoring, verdict)
-├── README.md         # Bio du projet
-└── (références/)     # Templates, exemples, guides (à venir)
+├── SKILL.md          # Le framework complet - colle ça dans ton IA
+└── README.md         # Ce fichier
 ```
+
+Un seul fichier à copier : **SKILL.md**. C'est tout.
 
 ---
 
 ## 🤝 Contribution
 
-Ce skill est un cadre vivant. Les améliorations possibles :
 - Ajout de références à des études de cas réelles
 - Templates de rapport automatisés
-- Création d'une base de benchmarks pour la calibration des scores
+- Base de benchmarks pour la calibration des scores
+
+Fork, PR, issue — comme tu veux.
 
 ---
 
 ## 📜 Licence
 
-Usage libre dans le cadre du projet **Le Labo du Futur** et des créations associées.
+Usage libre. Projet **Le Labo du Futur**.
 
 ---
 
