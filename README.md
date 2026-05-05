@@ -52,20 +52,36 @@ Types de contenu évaluables :
 
 ---
 
-## ⚡ Utilisation
+## ⚡ Installation
 
-### Dans Hermes Agent
+### Option 1 — Via Hermes Agent (recommandé)
 
-Charge le skill :
+Si tu utilises **Hermes Agent** (https://hermes-agent.nousresearch.com) :
+
+```bash
+hermes skills install kxmXX/educertify
 ```
-skill_view(name='educertify')
+
+Puis dans ta conversation :
+> *"J'ai un livre illustré pour les 3-6 ans sur les émotions. EduCertify, analyse."*
+
+Le skill est chargé automatiquement quand tu l'utilises.
+
+### Option 2 — Manuel (pour tout autre usage)
+
+Clone le repo :
+```bash
+git clone https://github.com/kxmXX/educertify.git
 ```
 
-Puis fournis ton contenu éducatif avec le contexte nécessaire (type, âge cible, objectifs). L'analyse complète est générée automatiquement.
+Colle le contenu de `SKILL.md` dans ton prompt IA favorite (Claude, ChatGPT, Gemini, etc.) avec :
+1. Le contenu éducatif à analyser (texte intégral, description des visuels, transcriptions)
+2. La tranche d'âge cible
+3. Les objectifs pédagogiques déclarés
 
-### Exemple de prompt
+### Exemple de prompt complet
 
-> "J'ai un livre illustré pour les 3-6 ans sur les émotions. Voici le texte intégral et la description des illustrations... EduCertify, analyse."
+> *"Utilise le framework EduCertify (ci-dessous) pour analyser ce contenu : [colle le contenu de SKILL.md]. Voici le livre : [texte + description]. Âge cible : 3-6 ans. Objectif : apprendre à identifier les émotions de base."*
 
 ---
 
